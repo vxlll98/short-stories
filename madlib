@@ -1,0 +1,36 @@
+print("You have selected prompt 1")
+  location = input("Please insert a place/location")
+  name = input("Please insert a name")
+  emotion = input("Please insert any emotion")
+  print(" Before I went to (%s) it began to rain outside. From the window I could see that (%s) was standing outside under the crying skies. It looked like they were (%s)."
+  % (location,name, emotion))
+
+def prompt2():
+ print("You have selected prompt 2")
+ name = input("Please insert a name")
+ name1 = input("Please insert a different name")
+ location = input("Please insert a location")
+ print("Honestly, I think (%s) likes (%s). They are so oblivious though and it irritates me. Last time that we went to (%s), (%s) said that they liked (%s) a lot but they think (%s) doesn't like them back. Sometimes I wanna smack them. They're so, dumb."
+ % (name, name1, location, name, name1, name1))
+
+def prompt3():
+ print("You have selected prompt 3")
+ fear = input("Please insert a fear")
+ name = input ("Please insert a name")
+ print("I have a fear of (%s). Funny that I, (%s) have a fear of (%s). Don't ask me why, I simply don't know nor can I provide you an answer. I want to over come it but I don't know how. Can you help me with that ? " % (fear, name, fear))
+
+def storyPicker(promptChoice):
+  if promptChoice == "1":
+    prompt1()
+  elif promptChoice == "2":
+    prompt2()
+  elif promptChoice == "3":
+    prompt3()
+
+def main():
+  print("Welcome to Mad Libs !! Please select a prompt !!")
+  promptChoice = input("Enter 1, 2, or 3")
+  storyPicker(promptChoice)
+
+if __name__ == "__main__":
+     main()
